@@ -1,12 +1,32 @@
-# React + Vite
+# SQL-to-ERD Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A web application that reads raw SQL code, extracts tables, columns, relationships, and constraints using a GPT-powered backend, and generates a visual ERD (Entity-Relationship Diagram) using PlantUML. It also optionally generates dummy data using the Faker library.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- Upload raw SQL code (DDL)
+- Extract table structures and relationships via GPT API (or RAG system)
+- Generate ERD / Extended ERD diagrams with PlantUML
+- Visualize ER diagrams in the browser
+- Generate dummy data for tables using Faker
+- Clean, modular React + Express architecture
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🏗 Tech Stack
+
+- **Frontend:** React (Vite), Axios
+- **Backend:** Node.js, Express, OpenAI GPT API, PlantUML, Faker.js / Python Faker
+- **Deployment (future):** Docker, Vercel/Netlify (frontend), Render/Fly.io (backend)
+
+---
+
+## ⚙ Setup
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/your-username/sql-to-erd.git
+cd sql-to-erd
